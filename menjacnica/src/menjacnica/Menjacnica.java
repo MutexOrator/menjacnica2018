@@ -3,6 +3,7 @@ package menjacnica;
 
 import java.util.LinkedList;
 
+import menjacnica.interfejs.MenjacnicaInterface;
 import menjacnica.sistemskeoperacije.SODodajValutu;
 import menjacnica.sistemskeoperacije.SOIzvrsiTransakciju;
 import menjacnica.sistemskeoperacije.SOObrisiValutu;
