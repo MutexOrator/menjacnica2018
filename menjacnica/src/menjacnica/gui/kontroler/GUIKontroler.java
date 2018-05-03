@@ -71,7 +71,7 @@ public class GUIKontroler {
 	
 	
 	public static  void prikaziDodajKursGUI() {
-		DodajKursGUI prozor = new DodajKursGUI(contentPane);
+		DodajKursGUI prozor = new DodajKursGUI();
 		prozor.setLocationRelativeTo(contentPane);
 		prozor.setVisible(true);
 	}
@@ -80,7 +80,7 @@ public class GUIKontroler {
 		JTable table=contentPane.getTable();
 		if (table.getSelectedRow() != -1) {
 			MenjacnicaTableModel model = (MenjacnicaTableModel)(table.getModel());
-			ObrisiKursGUI prozor = new ObrisiKursGUI(contentPane,model.vratiValutu(table.getSelectedRow()));
+			ObrisiKursGUI prozor = new ObrisiKursGUI(model.vratiValutu(table.getSelectedRow()));
 			prozor.setLocationRelativeTo(contentPane);
 			prozor.setVisible(true);
 		}
@@ -90,7 +90,7 @@ public class GUIKontroler {
 		JTable table=contentPane.getTable();
 		if (table.getSelectedRow() != -1) {
 			MenjacnicaTableModel model = (MenjacnicaTableModel)(table.getModel());
-			IzvrsiZamenuGUI prozor = new IzvrsiZamenuGUI(contentPane,
+			IzvrsiZamenuGUI prozor = new IzvrsiZamenuGUI(
 					model.vratiValutu(table.getSelectedRow()));
 			prozor.setLocationRelativeTo(contentPane);
 			prozor.setVisible(true);
